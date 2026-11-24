@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prepare an inquiry about a business partnership, conservation collaboration, or advisory role.">
+  <meta name="theme-color" content="#101b14">
+  <title>Get Involved | Bison Business Alliance</title>
+  <link rel="icon" href="assets/emblem.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="contact.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html"><img src="assets/emblem.webp" width="49" height="49" alt=""><span>Bison Business<br>Alliance</span></a>
+      <nav aria-label="Main navigation"><a href="mission.html">Mission</a><a href="conservation.html">Conservation</a><a href="businesses.html">For Businesses</a><a href="contact.html" aria-current="page" class="nav-cta">Get Involved</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">Get involved</span>
+        <h1>Let’s talk bison.</h1>
+        <p>Tell us a little about yourself and what you’d like to explore with the Alliance.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap split">
+        <div class="list">
+          <article><h3>Businesses</h3><p>Tell us about your company, what connects you to bison, and how you’d like to help.</p></article>
+          <article><h3>Conservation partners</h3><p>Share the work you lead, where it takes place, and what support would move it forward.</p></article>
+          <article><h3>Advisors</h3><p>Tell us about your experience in conservation, fundraising, Tribal partnerships, or nonprofit operations.</p></article>
+        </div>
+        <form id="interest-form">
+          <label>I'm interested in
+            <select name="interest" required>
+              <option value="">Select a topic</option>
+              <option value="business">Business partnership</option>
+              <option value="conservation">Conservation partnership</option>
+              <option value="advisory">Advising the Alliance</option>
+              <option value="general">General inquiry</option>
+            </select>
+          </label>
+          <label>Name <input name="name" autocomplete="name" required></label>
+          <label>Organization (optional) <input name="organization" autocomplete="organization"></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <p class="form-note" id="contact-note">The Alliance’s public inbox is being set up. You can download your inquiry as a draft.</p>
+          <div class="actions form-actions">
+            <button class="button forest" id="send-inquiry" type="submit" hidden>Open email draft</button>
+            <button class="button outline" id="download-inquiry" type="button">Download inquiry draft</button>
+          </div>
+          <p id="form-status" role="status"></p>
+          <noscript>Enable JavaScript to prepare an inquiry draft.</noscript>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="wordmark" href="index.html"><img src="assets/emblem.webp" width="49" height="49" alt=""><span>Bison Business<br>Alliance</span></a>
+      <div class="footer-links">
+        <a href="mission.html">Our mission</a>
+        <a href="conservation.html">Conservation priorities</a>
+        <a href="contact.html">Get involved</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
