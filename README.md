@@ -1,33 +1,38 @@
 # Bison Business Alliance
 
-A build-free, six-page website for GitHub Pages.
+The six-page website is ready to upload to the GitHub Pages repository. Extract
+the ZIP and upload the files inside it directly to the repository root in one
+commit. `index.html`, `styles.css`, `emblem.png`, and the photos all belong
+at the same level. An existing copy of `.nojekyll` can stay in place.
 
-## Publish
+## Logos
 
-1. Set `contactEmail` in `contact.js` to the Alliance's public inbox. With the value blank, visitors can download an inquiry draft. With an address set, they can also open a prefilled email in their mail app.
-2. Put the contents of this folder in the root of your GitHub repository, including the `assets` folder.
-3. In the repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose your publishing branch (usually `main`), select **/ (root)**, and save.
+`emblem.png` is the Alliance logo used in the header, footer, and homepage hero.
+It lives at the repository root. Replace that file with your preferred PNG
+using the same name.
 
-To preview locally, run `python3 -m http.server 8000` from the site folder and open http://localhost:8000.
+Each card in `businesses.html` has a labeled space for its own logo. Upload the
+five files to the repository root and replace each corresponding logo-space
+div with an image like this:
 
-The site uses relative links, so it can be hosted at a GitHub project path or custom domain. The emblem is the Alliance's supplied seal. Google Fonts are optional at runtime and have system fallbacks.
+```html
+<img class="tier-logo" src="community-partner.png" alt="">
+```
 
-## Image placeholders
+Suggested filenames are `community-partner.png`, `supporting-partner.png`,
+`conservation-partner.png`, `premier-partner.png`, and
+`distinguished-partner.png`. The adjacent tier heading supplies the name.
 
-The homepage, About, Our Work, Partners, and Leadership pages include labeled
-image slots. To fill an inline slot, upload a photo to `assets/` and replace the
-corresponding `<div class="image-slot …">` element with an `<img>` element.
-Keep the `feature-photo` class for the wide homepage and Our Work images.
-Give meaningful images concise alt text.
+`lokhonia-engineering.png` is the logo in the Conservation Partner listing.
+The Partners page presents benefits as proposed until the program terms are
+confirmed. Review contribution currency and frequency before publishing terms
+for both Canada and the United States.
 
-To set the homepage hero image, remove the `hero-placeholder` class and the
-`hero-image-label` span from `index.html`. The supplied sunset image in
-`assets/prairie-bison.webp` will show by default. To use a different file, change
-the background URL in the `.hero` rule in `styles.css`.
+## Contact
 
-## Update an existing GitHub Pages site
+The email link and contact form open the visitor’s email app with
+`info@bisonbusinessalliance.org` as the recipient. The visitor sends the message
+from that app.
 
-Upload the six HTML files and `styles.css` to the repository root, replacing
-files with matching names. The existing logo and contact script can stay in
-place. Keeping your existing `contact.js` also preserves your public inbox
-setting if you already added one.
+To preview locally, open `index.html` or run `python3 -m http.server 8000`
+from this directory and visit http://localhost:8000.

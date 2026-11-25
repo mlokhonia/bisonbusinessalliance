@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Prepare an inquiry about a business partnership, conservation collaboration, or advisory role.">
+  <meta name="description" content="Contact the Bison Business Alliance about business partnerships or conservation.">
   <meta name="theme-color" content="#101b14">
   <title>Contact | Bison Business Alliance</title>
-  <link rel="icon" href="emblem.webp" type="image/webp">
+  <link rel="icon" href="emblem.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="contact.js" defer></script>
 </head>
@@ -14,7 +14,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="index.html"><img src="emblem.webp" width="49" height="49" alt=""><span>Bison Business<br>Alliance</span></a>
+      <a class="wordmark" href="index.html"><img src="emblem.png" width="68" height="68" alt=""><span>Bison Business<br>Alliance</span></a>
       <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="mission.html">About</a><a href="conservation.html">Our Work</a><a href="businesses.html">Partners</a><a href="leadership.html">Leadership</a><a href="contact.html" aria-current="page" class="nav-cta">Contact</a></nav>
     </div>
   </header>
@@ -31,15 +31,14 @@
         <div class="list">
           <article><h3>Businesses</h3><p>Tell us about your company, what connects you to bison, and how you’d like to help.</p></article>
           <article><h3>Conservation partners</h3><p>Share the work you lead, where it takes place, and what support would move it forward.</p></article>
-          <article><h3>Advisors</h3><p>Tell us about your experience in conservation, fundraising, Tribal partnerships, or nonprofit operations.</p></article>
+          <p><a class="text-link email-link" id="contact-email" href="mailto:info@bisonbusinessalliance.org">info@bisonbusinessalliance.org</a></p>
         </div>
-        <form id="interest-form">
+        <form id="interest-form" hidden>
           <label>I'm interested in
             <select name="interest" required>
               <option value="">Select a topic</option>
               <option value="business">Business partnership</option>
               <option value="conservation">Conservation partnership</option>
-              <option value="advisory">Advising the Alliance</option>
               <option value="general">General inquiry</option>
             </select>
           </label>
@@ -47,13 +46,12 @@
           <label>Organization (optional) <input name="organization" autocomplete="organization"></label>
           <label>Email <input name="email" type="email" autocomplete="email" required></label>
           <label>Message <textarea name="message" rows="5" required></textarea></label>
-          <p class="form-note" id="contact-note">The Alliance’s public inbox is being set up. You can download your inquiry as a draft.</p>
+          <p class="form-note" id="contact-note">This form opens your email app with your message filled in.</p>
           <div class="actions form-actions">
-            <button class="button forest" id="send-inquiry" type="submit" hidden>Open email draft</button>
-            <button class="button outline" id="download-inquiry" type="button">Download inquiry draft</button>
+            <button class="button forest" id="send-inquiry" type="submit">Open email app</button>
           </div>
           <p id="form-status" role="status"></p>
-          <noscript>Enable JavaScript to prepare an inquiry draft.</noscript>
+          <noscript>Use the email link above to contact the Alliance.</noscript>
         </form>
       </div>
     </section>
@@ -61,7 +59,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <a class="wordmark" href="index.html"><img src="emblem.webp" width="49" height="49" alt=""><span>Bison Business<br>Alliance</span></a>
+      <a class="wordmark" href="index.html"><img src="emblem.png" width="68" height="68" alt=""><span>Bison Business<br>Alliance</span></a>
       <div class="footer-links">
         <a href="mission.html">About</a>
         <a href="conservation.html">Our Work</a>
