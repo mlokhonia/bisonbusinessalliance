@@ -186,7 +186,19 @@ td { font-weight: 700; }
   .leadership-grid { grid-template-columns: 1fr; }
 }
 
-.home-priorities .card { border-top: 0; padding-top: 0; }
+.home-priorities .card {
+  border-top: 0;
+  padding-top: 0;
+  container-type: inline-size;
+}
+.home-priorities h3 {
+  font-size: 1.125rem;
+  font-size: min(1.75rem, 5.65cqi);
+  white-space: nowrap;
+}
+@media (max-width: 60rem) {
+  .home-priorities { grid-template-columns: minmax(0, 1fr); }
+}
 .priority-image {
   aspect-ratio: 3 / 2;
   overflow: hidden;
