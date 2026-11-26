@@ -193,7 +193,7 @@ td { font-weight: 700; }
 }
 .home-priorities h3 {
   font-size: 1.125rem;
-  font-size: min(1.75rem, 5.65cqi);
+  font-size: min(2rem, 6.25cqi);
   white-space: nowrap;
 }
 @media (max-width: 60rem) {
